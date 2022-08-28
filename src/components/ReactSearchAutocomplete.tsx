@@ -82,7 +82,6 @@ export default function ReactSearchAutocomplete<T>({
   useEffect(() => {
     searchString?.length > 0 &&
       results &&
-      results?.length > 0 &&
       setResults(fuseResults(searchString))
   }, [items])
 
